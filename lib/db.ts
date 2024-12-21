@@ -4,7 +4,7 @@ import { pgTable, text } from 'drizzle-orm/pg-core';
 
 // Initialize Xata client with API key from environment variables
 const xata = new XataClient({
-    apiKey : process.env.XATA_API_KEY,
+    apiKey : "xau_feFTvYk7Tc928JWG8CFmZ44RQv9A1hvI1",
     branch : 'main'
 })
 export const db = drizzle(xata);
