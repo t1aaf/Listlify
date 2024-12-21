@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Tariq-Hassan-s-workspace-5iqs1u.us-east-1.xata.sh/db/Listify",
+  "codegen": {
+    "output": "xata.ts"
+  }
+}
