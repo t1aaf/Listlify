@@ -14,11 +14,7 @@ async function getNote(title: string) {
   return response[0];
 }
 
-export default async function NotePage({
-  params,
-}: {
-  params: { title: string };
-}) {
+export default async function NotePage({params}: {params: Promise<{ title: string }>}) {
 
   const { title } = await params;
   const note = await getNote(title);

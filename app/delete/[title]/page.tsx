@@ -10,15 +10,7 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import DeleteButton from "@/components/DeleteButton";
 
-interface PageProps {
-  params: {
-    title: string;
-  }
-}
-
-export default async function ConfirmDeletePage({
-  params,
-}: PageProps) {
+export default async function ConfirmDeletePage({params}: {params: Promise<{ title: string }>}) {
 
   const { title } = await params;
   const decodedTitle = decodeURIComponent(title);
