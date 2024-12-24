@@ -10,17 +10,17 @@ export const metadata: Metadata = {
 const poppins = Poppins({
   weight: "600",
   subsets: ["latin"],
-})
+});
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={poppins.className}
+        className={`${poppins.className} min-h-screen bg-gradient-to-br from-blue-200 via-blue-100 to-sky-100`}
       >
         {children}
       </body>

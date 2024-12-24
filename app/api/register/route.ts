@@ -9,12 +9,11 @@ export async function POST(req: Request) {
 
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        const response = await db.insert(usersTable).values({
+        await db.insert(usersTable).values({
             name,
             email,
             password: hashedPassword
         });
-        console.log(response);
 
     }
     catch (e) {
