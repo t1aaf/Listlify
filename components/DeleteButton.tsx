@@ -2,7 +2,6 @@
 
 import { Trash2 } from "lucide-react";
 import { Button } from "./ui/button";
-import { MouseEventHandler } from "react";
 import { redirect } from "next/navigation";
 
 export default function DeleteButton({ title }: { title: string }) {
