@@ -19,7 +19,7 @@ export default function FloatingNavbar() {
 
   const links = [
     { name: "Portfolio", icon: User, url: "https://tariq-hassan.vercel.app/" },
-    { name: "GitHub", icon: Github, url: "https://github.com/Signature-Tech" },
+    { name: "GitHub", icon: Github, url: "https://github.com/t1aaf" },
     {
       name: "Instagram",
       icon: Instagram,
